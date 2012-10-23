@@ -10,21 +10,42 @@ h1 {
 	padding: 0px;
 	font-size: 100px;
 }
+#wrapper {
+	margin: 40px auto;
+	max-width: 100%;
+	overflow: auto;
+	background: url(editedimages/paper017.jpg);
+}
 
+/* Minimum width of 960 pixels. */
+@media screen and (min-width: 960px) {
 #wrapper {
 	margin: 40px auto;
 	width: 1023px;
 	overflow: auto;
 	background: url(editedimages/paper017.jpg);
 }
+}
 
 #header {
-	width: 1023px;
+	width: 100%;
 	height: 300px;
 	line-height: 300px;
 	text-align: center;
 	background: url(editedimages/images/header1.png);
 }
+
+/* Minimum width of 960 pixels. */
+@media screen and (min-width: 960px) {
+#header {
+	max-width: 1023px;
+	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	background: url(editedimages/images/header1.png);
+	}
+}
+
 
 #menu {
 	width: 1023px;
