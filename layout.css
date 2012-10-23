@@ -1,0 +1,134 @@
+body {
+	background: url(editedimages/paper004.gif);
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Podkova', serif;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 100px;
+}
+
+#wrapper {
+	margin: 40px auto;
+	width: 1023px;
+	overflow: auto;
+	background: url(editedimages/paper017.jpg);
+}
+
+#header {
+	width: 1023px;
+	height: 300px;
+	line-height: 300px;
+	text-align: center;
+	background: url(editedimages/images/header1.png);
+}
+
+#menu {
+	width: 1023px;
+	overflow: auto;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#menu a {
+	text-decoration: none;
+	display: block;
+	width: 204.6px;
+	height: 60px;
+	line-height: 60px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bolder;
+	float: left;
+	font-size: 22px;
+	background: #D29152;
+	}
+	
+#menu a:hover {
+
+	background: #D79D65;
+	}
+
+ul 	{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+	
+li	{
+	text-align: center;
+	}
+
+#content {
+	width: 1003px;
+	padding: 10px;
+}
+
+#content img {
+	
+	float: left;
+	margin: 10px;
+	border-radius: 10px;
+}
+
+#content p {
+	font-size: 17px;
+}
+
+#footer {
+	width: 1023px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	clear: both;
+
+}
+#footer p {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset {
+	width: 450px;
+	float: left;
+	border: 2px groove wheat;
+}
+legend {
+	text-align: center;
+}
+
+#buttons {
+	clear: both;
+}
+
+.button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fcf8f2;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fcf8f2;
+	box-shadow:inset 0px 1px 0px 0px #fcf8f2;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fae4bd), color-stop(1, #eac380) );
+	background:-moz-linear-gradient( center top, #fae4bd 5%, #eac380 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fae4bd', endColorstr='#eac380');
+	background-color:#fae4bd;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	color: black;
+	font-size:20px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #cc9f52;
+}.button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #eac380), color-stop(1, #fae4bd) );
+	background:-moz-linear-gradient( center top, #eac380 5%, #fae4bd 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eac380', endColorstr='#fae4bd');
+	background-color:#eac380;
+}.button:active {
+	position:relative;
+	top:1px;
+}
