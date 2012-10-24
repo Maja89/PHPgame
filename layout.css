@@ -1,6 +1,4 @@
 /* CSS for PHPgame */
-
-/* main blocks */
 body {
 	background: url(editedimages/paper004.gif);
 	margin: 0px;
@@ -11,49 +9,16 @@ body {
 h1 {
 	margin: 0px;
 	padding: 0px;
-	font-size: 70px;
-}
-
-/* Minimum width of 960 pixels. */
-@media screen and (min-width: 960px) {
-h1 {
-	margin: 0px;
-	padding: 0px;
 	font-size: 100px;
 }
-}
 
-/* main blocks ends here */
-
-/* wrapper starts here */
-#wrapper {
-	margin: 40px auto;
-	max-width: 100%;
-	overflow: auto;
-	background: url(editedimages/paper017.jpg);
-}
-
-/* Minimum width of 960 pixels. */
-@media screen and (min-width: 960px) {
 #wrapper {
 	margin: 40px auto;
 	width: 1023px;
 	overflow: auto;
 	background: url(editedimages/paper017.jpg);
 }
-}
 
-/* header block starts here */
-#header {
-	width: 100%;
-	height: 200px;
-	line-height: 200px;
-	text-align: center;
-	background: url(editedimages/images/header1.png);
-}
-
-/* Minimum width of 960 pixels. */
-@media screen and (min-width: 960px) {
 #header {
 	max-width: 1023px;
 	height: 300px;
@@ -61,10 +26,7 @@ h1 {
 	text-align: center;
 	background: url(editedimages/images/header1.png);
 	}
-}
-/* header block ends here */
 
-/* menu block starts here */
 #menu {
 	width: 1023px;
 	overflow: auto;
@@ -101,9 +63,7 @@ ul 	{
 li	{
 	text-align: center;
 	}
-/* menu block ends here */
 
-/* content block starts here */
 #content {
 	width: 1003px;
 	padding: 10px;
@@ -119,9 +79,7 @@ li	{
 #content p {
 	font-size: 17px;
 }
-/* content block ends here */
 
-/* footer block starts here */
 #footer {
 	width: 1023px;
 	height: 50px;
@@ -134,9 +92,7 @@ li	{
 	margin: 0;
 	padding: 0;
 }
-/* footer block ends here */
 
-/* form styles */
 fieldset {
 	width: 450px;
 	float: left;
@@ -178,4 +134,92 @@ legend {
 }.button:active {
 	position:relative;
 	top:1px;
+}
+
+/* Max width of 960px */
+
+@media screen and (max-width: 960px) {
+
+	body {
+	background: green;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Podkova', serif;
+	}
+	
+	#wrapper {
+	width: 100%;
+	overflow: auto;
+	background: url(editedimages/paper017.jpg);
+	}
+	
+	#header {
+	max-width: 100%;
+	height: 250px;
+	line-height: 250px;
+	text-align: center;
+	background: url(editedimages/images/header1.png);
+	}
+	
+	#menu {
+	width: 204.6px;
+	overflow: auto;
+	float: left;
+	margin-bottom: 10px;
+	background: #D29152;
+	}
+	
+	#sidebar a {
+	text-decoration: none;
+	display: block;
+	width: 204.6px;
+	height: 40px;
+	line-height: 40px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: bolder;
+	}
+	
+	#content {
+	width: 100%;
+	}
+	
+	#content img {
+	
+	float: left;
+	width: 200px;
+	margin: 10px;
+	border-radius: 10px;
+	}
+	
+	#footer {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	clear: both;
+	}
+	
+}
+
+/* Max width of 600px */
+
+@media screen and (max-width: 600px) {
+	body {
+	background: red;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Podkova', serif;
+}
+}
+
+/* Max width 400px */
+
+@media screen and (max-width: 400px) {
+	body {
+	background: blue;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Podkova', serif;
+}
 }
