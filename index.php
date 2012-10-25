@@ -12,7 +12,7 @@
 	<div id="wrapper">
 	
 		<div id="header">
-			<h1>Webpage :)</h1>
+			<h1>PHPGAME</h1>
 		</div> <!--end header-->
 		
 		<div id="menu">
@@ -27,20 +27,9 @@
 		
 		<div id="content">
 			<img src="editedimages/char1.png">
+			<h2>Welcome</h2>
 			<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula metus, lacinia in malesuada quis, euismod nec augue. Suspendisse potenti. Quisque turpis felis, pulvinar ac suscipit et, aliquam vel velit. Suspendisse potenti. Aliquam metus quam, mattis ac malesuada id, rhoncus a urna. Integer nec ante sapien, laoreet bibendum felis. Pellentesque sed dignissim dolor. Pellentesque vitae sem et velit elementum convallis. Suspendisse dui nibh, adipiscing in pellentesque eget, ultricies eu urna. 
-			</p>
-			<p>
-			Vestibulum tortor eros, ultricies consectetur viverra in, eleifend vel dui. Duis non odio enim. Proin euismod ante sed purus vehicula non sollicitudin orci facilisis. Vivamus eleifend rhoncus congue. Cras sit amet libero odio. Sed ac neque risus. Nam quis ligula id quam dignissim convallis. Quisque fringilla consequat ultricies. In justo purus, pulvinar sit amet lobortis in, consectetur at nulla. Proin cursus erat eget leo congue ultrices. Vestibulum risus nibh, placerat at convallis a, congue et turpis. Etiam urna metus, imperdiet in viverra rutrum, pretium nec turpis. Morbi vehicula rhoncus odio, nec hendrerit nulla feugiat et. Aenean facilisis enim at massa imperdiet luctus. Fusce pretium, tellus et gravida viverra, libero nisl scelerisque turpis, quis suscipit felis enim in eros. 
-			</p>
-			<p>
-			Vestibulum tortor eros, ultricies consectetur viverra in, eleifend vel dui. Duis non odio enim. Proin euismod ante sed purus vehicula non sollicitudin orci facilisis. Vivamus eleifend rhoncus congue. Cras sit amet libero odio. Sed ac neque risus. Nam quis ligula id quam dignissim convallis. Quisque fringilla consequat ultricies. In justo purus, pulvinar sit amet lobortis in, consectetur at nulla. Proin cursus erat eget leo congue ultrices. Vestibulum risus nibh, placerat at convallis a, congue et turpis. Etiam urna metus, imperdiet in viverra rutrum, pretium nec turpis. Morbi vehicula rhoncus odio, nec hendrerit nulla feugiat et. Aenean facilisis enim at massa imperdiet luctus. Fusce pretium, tellus et gravida viverra, libero nisl scelerisque turpis, quis suscipit felis enim in eros. 
-			</p>
-			<p>
-			Vestibulum tortor eros, ultricies consectetur viverra in, eleifend vel dui. Duis non odio enim. Proin euismod ante sed purus vehicula non sollicitudin orci facilisis. Vivamus eleifend rhoncus congue. Cras sit amet libero odio. Sed ac neque risus. Nam quis ligula id quam dignissim convallis. Quisque fringilla consequat ultricies. In justo purus, pulvinar sit amet lobortis in, consectetur at nulla. Proin cursus erat eget leo congue ultrices. Vestibulum risus nibh, placerat at convallis a, congue et turpis. Etiam urna metus, imperdiet in viverra rutrum, pretium nec turpis. Morbi vehicula rhoncus odio, nec hendrerit nulla feugiat et. Aenean facilisis enim at massa imperdiet luctus. Fusce pretium, tellus et gravida viverra, libero nisl scelerisque turpis, quis suscipit felis enim in eros. 
-			</p>
-			<p>
-			Vestibulum tortor eros, ultricies consectetur viverra in, eleifend vel dui. Duis non odio enim. Proin euismod ante sed purus vehicula non sollicitudin orci facilisis. Vivamus eleifend rhoncus congue. Cras sit amet libero odio. Sed ac neque risus. Nam quis ligula id quam dignissim convallis. Quisque fringilla consequat ultricies. In justo purus, pulvinar sit amet lobortis in, consectetur at nulla. Proin cursus erat eget leo congue ultrices. Vestibulum risus nibh, placerat at convallis a, congue et turpis. Etiam urna metus, imperdiet in viverra rutrum, pretium nec turpis. Morbi vehicula rhoncus odio, nec hendrerit nulla feugiat et. Aenean facilisis enim at massa imperdiet luctus. Fusce pretium, tellus et gravida viverra, libero nisl scelerisque turpis, quis suscipit felis enim in eros. 
+			This game is a very simple free singleplayer rpggame I have created as a project for my PHP-education. Start by creating your account and then login to try it out. Please contact me if you find any bugs.
 			</p>
 		</div> <!--end content-->
 		

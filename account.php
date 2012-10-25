@@ -24,7 +24,7 @@ if(check_login_status() == false) {
 	<div id="wrapper">
 	
 		<div id="header">
-			<h1>Webpage :)</h1>
+			<h1>PHPGAME</h1>
 		</div> <!--end header-->
 		
 		<div id="menu">
@@ -44,18 +44,15 @@ if(check_login_status() == false) {
 			<fieldset>
 			<legend><strong>Characterinfo</strong></legend>
 				<img src="editedimages/char1.png"><br>
-				<strong>Charactername:</strong> Peter<br>
-				<strong>Characterlevel:</strong> 7<br>
+				<p>
+					This is your character.
+				</p>
 			</fieldset>
-			
-			
 			
 			<fieldset>
 			<legend><strong>Inventory</strong></legend>
 				<ul>
-					<li>Item one</li>
-					<li>Item two</li>
-					<li>Item three</li>
+					<?php show_inventory (); ?>
 				</ul>
 			</fieldset>
 			

@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Index</title>
+		<title>Contact</title>
 		<link href="layout.css" type="text/css" rel="stylesheet">
 		<meta charset="utf-8">
 		<link href='http://fonts.googleapis.com/css?family=Podkova:400,700' rel='stylesheet' type='text/css'>
@@ -12,7 +12,7 @@
 	<div id="wrapper">
 	
 		<div id="header">
-			<h1>Webpage :)</h1>
+			<h1>PHPGAME</h1>
 		</div> <!--end header-->
 		
 		<div id="menu">
@@ -27,25 +27,12 @@
 		
 		<div id="content">
 		
+			<h2>Contact me</h2>
+		
 			<p>
-			Fill out the form below if you want to contact me about anything.
+			If you want to contact me about the game my email is maja.lundgren89@gmail.com
 			</p>
 			
-			<form method="post" action="contact.php">
-				<p>
-					<label for="username">Name:</label>
-					<input type="text" name="name">
-				</p>
-				<p>
-					<label for="email">Email:</label>
-					<input type="text" name="email">
-				</p>
-				<p>
-					<label for="message">Message:</label>
-					<textarea name="message"></textarea>
-				</p>
-				<input type="submit" value="Send">
-			</form>
 			
 		</div> <!--end content-->
 		

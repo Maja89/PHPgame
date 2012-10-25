@@ -11,7 +11,7 @@
 		<div id="wrapper">
 		
 			<div id="header">
-				<h1>Webpage :)</h1>
+				<h1>PHPGAME</h1>
 			</div> <!--end header-->
 			
 			<div id="menu">
@@ -29,9 +29,9 @@
 					This game is a very oldschool PHP rpg game that I have created as a project for my PHP education. I have only been studying PHP for two months so bare with me :P 
 				</p>
 				<p>
-					To play you have to register a new account (I'll advice you to choose a password you don't use anywhere else since my database isn't 100 % secure). The game is free to play.
-					Once you have your account you can logg in and start playing. You play the young adventurous knight Peter who travels around in the world fighting dragons, rescuing princesses and all other normal knightychores. 
-					If you succedd on an adventure will get loot which makes Peter stronger so he can fight stronger monsters.
+					To play you have to register a new account. The game is free to play. Once you have your account you can logg in and start playing: 
+					travel around in the world fighting dragons, rescuing princesses and all other normal knightychores. 
+					If you succeed on an adventure will get loot which makes you stronger so you can fight stronger monsters.
 				</p>
 			</div> <!--end content-->
 		

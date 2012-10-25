@@ -27,7 +27,55 @@ function safeInsert($string)
 
 function show_inventory () {
 	
-	$sql = "SELECT LootID FROM Inventory WHERE UserID = $userID";
+	require_once('conn.php');
+	
+	$dbConn = mysqli_connect($db_hostname, $db_username, $db_password, $db_database);
+	
+	$user = $_SESSION['username'];
+	
+	$sqluser = "SELECT userID FROM users WHERE username = '$user'";
+	$resuser = mysqli_query($dbConn, $sqluser);
+	$rowuser = mysqli_fetch_assoc($resuser);
+	
+	$userID = $rowuser['userID'];
+	
+	$sqlLootID = "SELECT lootID FROM inventory WHERE userID = '$userID'";
+	$resLootID = mysqli_query($dbConn, $sqlLootID);
+	$rowLootID = mysqli_fetch_assoc($resLootID);
+	
+	$lootID = $rowLootID['lootID'];
+	
+	$sqlLoot = "SELECT lootname, lootdesc, loottype, strength, intelligence, agility, Defence FROM loot WHERE lootID = '$lootID'";
+	$resLoot = mysqli_query($dbConn, $sqlLoot);
+	
+	
+	while( $rowLoot = mysqli_fetch_assoc($resLoot) )
+	{
+		echo "<li>";
+		echo "<strong>";
+		echo $rowLoot['lootname'];
+		echo "</strong>";
+		echo "<br>";
+		echo $rowLoot['lootdesc'];
+		echo "<br>";
+		echo "Strength: ";
+		echo $rowLoot['strength'];
+		echo "<br>";
+		echo "Intelligence: ";
+		echo $rowLoot['intelligence'];
+		echo "<br>";
+		echo "Agility: ";
+		echo $rowLoot['agility'];
+		echo "<br>";
+		echo "Defence: ";
+		echo $rowLoot['Defence'];
+		echo "<br>";
+		echo "</li>";
+		echo "<hr>";
+		
+	}
+	
+	
 }
 
 
@@ -38,7 +86,9 @@ require_once('conn.php');
 
 $dbConn = mysqli_connect($db_hostname, $db_username, $db_password, $db_database);
 
-$sqlAdven = "SELECT advenname, strength, intelligence, agility, Defence, advencontent, imagepath FROM adventures WHERE advenID = 3"; // Random an adventure
+$advenID = rand(4,5);
+
+$sqlAdven = "SELECT advenname, strength, intelligence, agility, Defence, advencontent, imagepath FROM adventures WHERE advenID = '$advenID'"; // Random an adventure
 $resAdven = mysqli_query($dbConn, $sqlAdven);
 
 $rowAdven = mysqli_fetch_assoc($resAdven);
@@ -84,10 +134,10 @@ $sqlStats = "SELECT strength, intelligence, agility, Defence FROM loot WHERE loo
 $resStats = mysqli_query($dbConn, $sqlStats);
 $rowStats = mysqli_fetch_assoc($resStats);
 
-$strengthStats = $rowStats['strength'];
-$intelligenceStats = $rowStats['intelligence'];
-$agilityStats = $rowStats['agility'];
-$defenceStats = $rowStats['Defence'];
+$strengthStats = $rowStats['strength'] + 5;
+$intelligenceStats = $rowStats['intelligence'] + 5;
+$agilityStats = $rowStats['agility'] + 5;
+$defenceStats = $rowStats['Defence'] + 5;
 
 //end get users stats
 
@@ -143,7 +193,9 @@ require_once('conn.php');
 
 $dbConn = mysqli_connect($db_hostname, $db_username, $db_password, $db_database);
 
-$sqlLoot = "SELECT lootID, lootname, lootdesc, strength, intelligence, agility, Defence, loottype FROM loot WHERE lootID = 3"; // Random a lootitem
+$lootID = rand(1, 4);
+
+$sqlLoot = "SELECT lootID, lootname, lootdesc, strength, intelligence, agility, Defence, loottype FROM loot WHERE lootID = '$lootID'"; // Random a lootitem
 $resLoot = mysqli_query($dbConn, $sqlLoot);
 $rowLoot = mysqli_fetch_assoc($resLoot);
 
@@ -167,12 +219,13 @@ echo "<strong>Defence:</strong> $defenceLoot<br>";
 $user = $_SESSION['username'];
 
 $sqlUser = "SELECT userID FROM users WHERE username = '$user'";
+$resUser = mysqli_query($dbConn, $sqlUser);
+$rowUser = mysqli_fetch_assoc($resUser);
 
-echo $sqlUser;
+$Iduser = $rowUser['userID'];
 
-$sql = "INSERT INTO inventory (lootID) VALUES ('$IdLoot') WHERE userID = '$user'";
-
-
+$sqlInsert = "INSERT INTO inventory (lootID, userID) VALUES ('$IdLoot', '$Iduser') ";
+$resInsert = mysqli_query($dbConn, $sqlInsert);
 
 }
 ?>

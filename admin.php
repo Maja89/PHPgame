@@ -12,7 +12,7 @@ redirect('login.php');
 <!doctype html>
 <html>
 	<head>
-		<title>Characterpage</title>
+		<title>Admin</title>
 		<link href="layout.css" type="text/css" rel="stylesheet">
 		<meta charset="utf-8">
 		<link href='http://fonts.googleapis.com/css?family=Podkova:400,700' rel='stylesheet' type='text/css'>
@@ -23,7 +23,7 @@ redirect('login.php');
 	<div id="wrapper">
 	
 		<div id="header">
-			<h1>Webpage :)</h1>
+			<h1>PHPGAME</h1>
 		</div> <!--end header-->
 		
 		<div id="menu">
@@ -41,7 +41,6 @@ redirect('login.php');
 			
 		<ul>
 			<li><a href="admin_createadventures.php">Create adventures</a></li>
-			<li><a href="#">Manage users</a></li>
 		</ul>
 		
 		<div id="buttons">

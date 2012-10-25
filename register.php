@@ -12,7 +12,7 @@
 	<div id="wrapper">
 	
 		<div id="header">
-			<h1>Webpage :)</h1>
+			<h1>PHPGAME</h1>
 		</div> <!--end header-->
 		
 		<div id="menu">

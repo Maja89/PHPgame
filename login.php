@@ -12,7 +12,7 @@
 	<div id="wrapper">
 	
 		<div id="header">
-			<h1>Webpage :)</h1>
+			<h1>PHPGAME</h1>
 		</div> <!--end header-->
 		
 		<div id="menu">
@@ -29,7 +29,7 @@
 		
 			<form id="login-form" method="post" action="login.inc.php">
 			
-			<p>Please enter your username and password.</p>
+			<p><strong>Please enter your username and password.</strong></p>
 			<P>
 			<label for="user">Username:</label>
 			<input type="text" name="user" id="user">
